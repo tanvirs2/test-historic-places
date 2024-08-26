@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Taj Mahal",
+    "location": "Agra, India",
+    "description": "A white marble mausoleum built in memory of the Mughal emperor Shah Jahan's wife Mumtaz Mahal.",
+    "image": "https://example.com/taj-mahal.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Great Wall of China",
+    "location": "China",
+    "description": "A series of fortifications stretching across northern China, built to protect the Chinese Empire from invasions.",
+    "image": "https://example.com/great-wall-of-china.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Colosseum",
+    "location": "Rome, Italy",
+    "description": "An ancient Roman amphitheater built of concrete and stone, used for gladiatorial contests and public spectacles.",
+    "image": "https://example.com/colosseum.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Machu Picchu",
+    "location": "Peru",
+    "description": "An ancient Incan city perched high in the Andes Mountains, known for its intricate stonework and stunning views.",
+    "image": "https://example.com/machu-picchu.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chichen Itza",
+    "location": "Mexico",
+    "description": "A major Mayan city known for its impressive pyramid structures, including the Temple of Kukulkan.",
+    "image": "https://example.com/chichen-itza.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Angkor Wat",
+    "location": "Cambodia",
+    "description": "A massive temple complex built by the Khmer Empire, considered one of the world's most impressive architectural achievements.",
+    "image": "https://example.com/angkor-wat.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Petra",
+    "location": "Jordan",
+    "description": "An ancient Nabatean city carved into the sandstone cliffs of a narrow gorge, known for its intricate architecture and dramatic setting.",
+    "image": "https://example.com/petra.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Great Pyramid of Giza",
+    "location": "Egypt",
+    "description": "The largest of the three pyramids at Giza, a monumental tomb built for the Egyptian pharaoh Khufu.",
+    "image": "https://example.com/great-pyramid-of-giza.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Parthenon",
+    "location": "Athens, Greece",
+    "description": "An ancient Greek temple dedicated to the goddess Athena, considered a masterpiece of classical architecture.",
+    "image": "https://example.com/parthenon.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Forbidden City",
+    "location": "Beijing, China",
+    "description": "A vast imperial palace complex that served as the home of Chinese emperors for centuries.",
+    "image": "https://example.com/forbidden-city.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Eiffel Tower",
+    "location": "Paris, France",
+    "description": "An iconic wrought-iron lattice tower on the Champ de Mars, one of the most recognizable landmarks in the world.",
+    "image": "https://example.com/eiffel-tower.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Statue of Liberty",
+    "location": "Liberty Island, New York City, USA",
+    "description": "A colossal copper statue representing liberty and enlightenment, a gift from France to the United States.",
+    "image": "https://example.com/statue-of-liberty.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Stonehenge",
+    "location": "England",
+    "description": "A prehistoric monument consisting of a ring of standing stones, believed to have been used for astronomical purposes.",
+    "image": "https://example.com/stonehenge.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Great Mosque of Djenné",
+    "location": "Mali",
+    "description": "A mudbrick mosque considered one of the largest earthen buildings in the world.",
+    "image": "https://example.com/great-mosque-of-djenne.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Christ the Redeemer",
+    "location": "Rio de Janeiro, Brazil",
+    "description": "A large Art Deco statue of Jesus Christ overlooking the city of Rio de Janeiro.",
+    "image": "https://example.com/christ-the-redeemer.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Pompeii",
+    "location": "Italy",
+    "description": "An ancient Roman city preserved under layers of ash and pumice after the eruption of Mount Vesuvius.",
+    "image": "https://example.com/pompeii.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Easter Island",
+    "location": "Chile",
+    "description": "A remote island known for its iconic moai statues, believed to have been created by the Rapa Nui people.",
+    "image": "https://example.com/easter-island.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Great Barrier Reef",
+    "location": "Australia",
+    "description": "The world's largest coral reef system, home to a diverse array of marine life.",
+    "image": "https://example.com/great-barrier-reef.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Hagia Sophia",
+    "location": "Istanbul, Turkey",
+    "description": "A former Greek Orthodox cathedral, later converted into a mosque, and now a museum, known for its impressive dome and mosaics.",
+    "image": "https://example.com/hagia-sophia.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Angkor Thom",
+    "location": "Cambodia",
+    "description": "A walled city within the Angkor Archaeological Park, known for its impressive temples and bas-relief carvings.",
+    "image": "https://example.com/angkor-thom.jpg"
+  }
+]
