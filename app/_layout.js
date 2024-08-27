@@ -17,10 +17,10 @@ export default function Layout() {
                     },
                 }}>
                 <Stack.Screen name="index"  options={{
-                    title: 'Home',
+                    title: 'Historical Place',
                 }}/>
                 <Stack.Screen name="place-details/[id]" options={{
-                    title: 'Details',
+                    title: 'Place Details',
                 }}/>
             </Stack>
         </Provider>
