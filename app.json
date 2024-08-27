@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "historic-place3",
-    "slug": "historic-place3",
-    "scheme": "historic-place3",
+    "name": "historic-place",
+    "slug": "historic-place",
+    "scheme": "historic-place",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,13 +19,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tanvirs.historicplace3"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d82651a5-8fa0-4006-9d3d-e44a6eaec1e2"
+      }
+    }
   }
 }

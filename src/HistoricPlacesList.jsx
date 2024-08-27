@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import { FlatList, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-//import historicPlaces from "./../constants/historic-places.json";
 import {Link} from "expo-router";
 import {useDispatch, useSelector} from "react-redux";
 import {setHistoricPlacesList} from "../redux/store";
@@ -32,39 +31,47 @@ const HistoricPlacesList = () => {
     const dispatch = useDispatch();
     const {historicPlaces} = useSelector((state) => state.historicPlaces);
 
-    const [selectedPlaces, setSelectedPlaces] = useState([]);
-
     useEffect(() => {
         if (historicPlaces.length === 0) {
             dispatch(setHistoricPlacesList());
         }
-    }, []);
+    }, [historicPlaces]);
 
 
-    const handleCheckboxPress = (place) => {
-        const updatedSelectedPlaces = [...selectedPlaces];
-        const index = updatedSelectedPlaces.indexOf(place);
-
-        if (index === -1) {
-            updatedSelectedPlaces.push(place);
-        } else {
-            updatedSelectedPlaces.splice(index, 1);
-        }
-
-        setSelectedPlaces(updatedSelectedPlaces);
+    const handleCheckboxPress = (item) => {
+        const updatedData = updateData(historicPlaces, item.id, { visited: !item.visited })
+        dispatch(setHistoricPlacesList(updatedData));
     };
+
+    function updateData(historicPlacesList, id, new_data) {
+        const index = historicPlacesList.findIndex(item => Number(item.id) === Number(id));
+        if (index !== -1) {
+            historicPlacesList[index] = { ...historicPlacesList[index], ...new_data };
+        }
+        return historicPlacesList;
+    }
 
 
     const renderItem = ({ item }) => {
-        let isChecked = selectedPlaces.includes(item);
         return (
             <View style={{ flexDirection: 'row', alignItems: 'center', padding: 10 }}>
                 <TouchableOpacity onPress={() => handleCheckboxPress(item)}>
-                    {isChecked ? <View style={{...styles.visit, ...styles.visited, "color": '#ffffff'}}><Text>Visited</Text></View> : <View style={{...styles.visit}}/>}
+                    {item.visited ? (
+                        <View style={{...styles.visit, ...styles.visited, "color": '#ffffff'}}>
+                            <Text>Visited</Text>
+                        </View>) : (
+                            <View style={{...styles.visit}}>
+                                <Text>X</Text>
+                            </View>
+                    )}
                 </TouchableOpacity>
+
+
                 <View style={{ marginLeft: 10 }}>
-                    <Link href={`/place-details/${item.id}`}>{item.name}</Link>
-                    <Text style={{ fontSize: 12, color: 'gray' }}>{item.location}</Text>
+                    <Link href={`/place-details/${item.id}`}>
+                        {item.name}
+                    </Link>
+                    <Link href={`/place-details/${item.id}`} style={{ fontSize: 12, color: 'gray' }}>{item.location}</Link>
                 </View>
             </View>
         );

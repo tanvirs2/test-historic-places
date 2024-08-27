@@ -1,5 +1,6 @@
 import {combineReducers, createStore} from 'redux';
 import historicPlaces from "../constants/historic-places.json";
+import {shuffleArray} from "../utils/helpers";
 
 const initialState = {
     historicPlaces: []
@@ -18,16 +19,23 @@ const reducers = combineReducers({
     historicPlaces: rootReducer,
 });
 
-export function setHistoricPlacesList() {
+export function setHistoricPlacesList(historicPlacesFromParam = []) {
+    let historicPlacesNew = historicPlaces.map(item => ({...item, visited: false}));
+
+    historicPlacesNew = shuffleArray(historicPlacesNew);
+
+    if (historicPlacesFromParam.length) {
+        historicPlacesNew = historicPlacesFromParam;
+    }
+
     return {
         type: "ADD_LIST",
         payload: {
-            historicPlaces,
+            historicPlaces: historicPlacesNew,
         },
     };
 }
 
-// Create the Redux store
 const store = createStore(reducers);
 
 export default store;
